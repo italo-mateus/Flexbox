@@ -13,12 +13,13 @@
             display: flex;
             flex-direction: row;
             justify-content: center; /*Eixo principal*/
-            align-items: top; /*Eixo secundario*/
-            flex-flow: row wrap; /*É a junção  do flex direction e flex wrap*/
-            align-content: space-around; /*Quando existe o wrap, serve para alinhar no eixo perpendicular as linhas (Conflito com align-items)*/
-            gap: ; /*Espaço entre os elementos*/
-            row-gap: ;
-            column-gap: ;
+            align-items: center; /*Eixo secundario*/
+            flex-flow: row nowrap; /*É a junção  do flex direction e flex wrap (wrap quebra a linha caso a largura fique minima)*/
+            align-content: center; /*Quando existe o wrap, serve para alinhar no eixo perpendicular as linhas (Conflito com align-items)*/
+            gap: 0; /*Espaço entre os elementos*/
+            row-gap: 0;
+            column-gap: 0;
+
         }
 
         .b1{
@@ -28,6 +29,10 @@
             padding: 5px;
             border-radius: 10px;
             margin: 5px;
+            order: 0;
+            flex-grow: 0;
+            flex-shrink: 0;
+            
         }
 
         .b2{
@@ -37,6 +42,10 @@
             padding: 5px;
             border-radius: 10px;
             margin: 5px;
+            order: 0;
+            flex-grow: 0;
+            flex-shrink: 0;
+            
         }
 
         .b3{
@@ -46,6 +55,10 @@
             padding: 5px;
             border-radius: 10px;
             margin: 5px;
+            order: 0;
+            flex-grow: 0;
+            flex-shrink: 0;
+            
         }
     </style>
 </head>
@@ -54,14 +67,15 @@
         <div class="b1">1</div>
         <div class="b2">2</div>
         <div class="b3">3</div>
-        <div class="b1">1</div>
-        <div class="b1">1</div>
+        <!-- <div class="b1">1</div>
         <div class="b2">2</div>
         <div class="b3">3</div>
         <div class="b1">1</div>
         <div class="b2">2</div>
         <div class="b3">3</div>
         <div class="b1">1</div>
+        <div class="b2">2</div> 
+        <div class="b3">3</div> -->
 
 
     </main>
